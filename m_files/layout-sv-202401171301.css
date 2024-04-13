@@ -1,0 +1,47 @@
+body { background-color: #eaecef; }
+.company-wrapper { overflow: hidden; background-color: #eaecef; }
+.company-wrapper.view { padding-top: 46px; }
+.company-wrapper.view.webview { padding-top: 0; }
+.company-body { padding-top: 8px; }
+.company-body-wrapper { position: relative; padding: 0 8px; }
+.company-body-container { position: relative; }
+.ad-horizontal { position: relative; overflow: hidden; width: calc(100% + 40px); height: 65px; margin-top: 10px; margin-left: -20px; }
+.screen-out { overflow: hidden; position: absolute !important; left: -9999px; clip: rect(0, 0, 0, 0); clip: rect(0 0 0 0); margin: -1px; border: 0; padding: 0; }
+.company-footer { text-align: center; }
+.company-footer .copyright { overflow: hidden; width: 106px; height: 12px; margin: 0 auto; }
+.company-footer .copyright::before { content: ''; display: block; width: 106px; height: 12px; background-image: url("https://i.jobkorea.kr/content/images/m/ver_1/footer/jk_footer.png"); background-repeat: no-repeat; background-size: 106px 12px; }
+.navFix .navDep01Swiper { z-index: 9980; }
+.specSwipeContent .swiperCont { width: 100%; }
+.listBx .listItem { padding: 0 8px !important; }
+.comSortArea { padding: 0 8px !important; }
+.starSpecSec .specViewTabs { padding: 10px 0 !important; }
+.jkComTab { padding: 0 8px 10px !important; }
+.salary-ranking-carousel-item { display: block; }
+.companyBody .jkPg, .companyViewBody .jkPg { margin: 5px 8px 0 !important; }
+.listAtc .tplPagination { margin: 7px 8px !important; }
+.starSpecSec { padding: 0 8px; }
+.specSwipeContent { border-left: 1px solid #dcdee0; border-right: 1px solid #dcdee0; }
+.starSpecSec .specAtc { border-left: 1px solid #dcdee0; border-right: 1px solid #dcdee0; }
+.salary-ranking-carousel-container .swiper-slide { display: block !important; }
+.list-recruit .badge { padding: 0 7px !important; line-height: 19px; }
+.recently-pass .badge { padding: 0 9px !important; line-height: 19px; }
+.salary-article-year .chart-caption .item1::before { top: 5px !important; }
+.salary-article-leave .chart-caption .item1::before { top: 5px !important; }
+.salary-article .tooltip-wrap { -webkit-transform: translateY(4px) !important; transform: translateY(4px) !important; }
+.salary-article-average .average-monthly-label { line-height: 15px; }
+.salary-container-view { padding: 0 8px; }
+.salary-article { border-left: 1px solid #dcdee0; border-right: 1px solid #dcdee0; }
+.mySpecAtc .swiper-slide { display: block !important; }
+.salary-article-company .button-more::after { top: 5px !important; }
+.companyViewBody .company-body { padding-top: 0; }
+/* pubmoctest */
+.pubmoctest-page-include {padding-left:8px; padding-right:8px;}
+.pubmoctest-page-include .pubmoctest-list-header {padding-top:7px; padding-bottom:7px;}
+.pubmoctest-page-include .pubmoctest-list-header .total {padding-left:12px;font-size: 13px; color:#333; line-height:1.33;}
+.pubmoctest-page-include .pubmoctest-list-header .total em {color:#002aff;}
+.pubmoctest-page-include .pubmoctest-list .list-item {border-top-color:#e3e6e9; border-bottom-color:#e3e6e9; border-left:.5px solid #e3e6e9; border-right:.5px solid #e3e6e9;}
+.pubmoctest-page-include .pubmoctest-list .buttons {border-top-color:#e3e6e9;}
+.pubmoctest-page-include .pubmoctest-list .buttons .button {border-left-color:#e3e6e9;}
+.pubmoctest-page-include .tplPagination {margin-left:0; margin-right:0; margin-top:5px; margin-bottom:30px;}
+.pubmoctest-page-include .button-more-list {display:block; width:100%; height:47px; padding-top:14px; border:.5px solid #cdcdcd;font-size: 15px; color:#333; background-color:#f4f5f6; -webkit-box-sizing:border-box; box-sizing:border-box; line-height:1.33; text-align:center;}
+.pubmoctest-page-include .button-more-list::after {content:''; display:inline-block; width:14px; height:12px; margin-left:6px; background-image:url('https://i.jobkorea.kr/content/images/m/company/sprite-pubmoctest.png'); background-repeat:no-repeat; background-size:14px 12px; background-position:0 0;}

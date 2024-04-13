@@ -1,0 +1,1 @@
+sg_check = function(){}; sg_check.playstart = function(){}; sg_check.payment = function(){};
