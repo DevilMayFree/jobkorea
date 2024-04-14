@@ -1,0 +1,5 @@
+.messagebox_title{font-size: 110% !important; color: #FFFFFF !important; background: #3366c5 !important; line-height:3;}
+.messagebox{border-radius:8px; -webkit-border-radius:8px; -moz-border-radius:8px;}
+.messagebox_buttons_button{	border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;}
+.messagebox_button_done{background:linear-gradient(to bottom right,#0b179a,#a7c2de) !important;color: #FFFFFF !important;}
+.messagebox_buttons_button:hover {color:#3366c5 !important;font-weight: bold !important; background:#fff !important; border:1px solid #a7c2de !important;}

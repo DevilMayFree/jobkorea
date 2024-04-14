@@ -1,0 +1,9 @@
+.myMenu {position: absolute; padding: 9px 0 0 0;}
+.myMenu > .inner {position: relative; display: table-cell; width: 200px; background: #fff;border:1px #747474 solid; box-shadow: 5px 5px 15px #323232;}
+.myMenu > .inner > ul {padding-left: 5px; padding:10px 0 35px 5px}
+.myMenu > .inner > ul > li a { min-width:175px; padding: 4px 4px;font-size: 14px;font-weight: normal;text-align: left;color: #3366c5;letter-spacing: -1px;line-height: 1.2;}
+.myMenu > .inner > ul > li a:hover {color: #df3655;font-weight: bold;}
+.myMenu .subm_close {position: absolute;bottom:0;right: 0;}
+.myMenu .subm_close a {font-size: 12px;color: #757575;letter-spacing: -1px;}
+.myMenu .subm_close a:hover {color: #757575;}
+.myMenu .subm_close img {vertical-align: top;}

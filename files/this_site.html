@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0046)https://www.hi-ib.com/inc/common/this_site.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=EUC-KR"><title>하이투자증권</title>
+
+<script language="JavaScript" src="./common(2).js"></script>
+<script language="JavaScript" src="./domain.js"></script>
+<script language="JavaScript" src="./jquery.js"></script>
+<script language="JavaScript" src="./jquery_util(1).js"></script>
+<script language="JavaScript">
+<!--
+var _isInit = false;
+var _idx;
+var _url;
+var _mod;
+var _stock;
+function this_site_exit(){
+	if(top.name!='_openWebBrowser' && top.name!='_hiWebBrowser'){
+		setCookie("_isOpenWeb","");
+		setCookie("_isOpenWeb","",null,null,_MST_DOMAIN);
+		setCookie("LoginOK","");
+		setCookie("LoginOK","",null,null,_MST_DOMAIN);
+		top.idefense.location.href = "/login/logout.jsp?isDirect=Y";
+		if(fncGetCookie("LoginOK")== "Y")
+			alert("다른 사이트로 이동시에는 고객님의 정보보안을 위해서 \n\n자동 로그아웃이 됩니다.\n\n유의하시기 바랍니다.");
+	}
+}
+function init(){		
+	if(!_isInit){
+		top.idefense.location.href = "/login/this_login.jsp";
+		_isInit = true;
+	}
+}
+function _hyperLogin(isInterval){
+	if(isInterval) top.idefense._hyperLogin(isInterval);
+	else top.idefense.hyperLogin();
+}
+function reloadInit(){
+	top.idefense.location.href = "/login/this_login.jsp";
+}
+function loginOper(){
+	try{
+		if(top.idefense.isReady()){
+			switch(_idx){
+				case 0:
+					top.idefense.login();
+					break;
+				case 1:
+					top.idefense.logout();
+					break;
+				case 2:
+					top.idefense.login(_url, _mod);
+					break;
+				case 4:
+					top.idefense.login(null, 'R');
+					break;
+				case 9:
+					top.idefense.myAsset();
+					break;
+			}
+		}
+		else setTimeout(loginOper, 300);
+	}
+	catch(exception){
+		setTimeout(loginOper, 300);
+	}
+}
+function _viewSpinner(){
+	_viewWall(top.main);
+	try{
+		top.main.spinner();
+	}
+	catch(exception){};
+}
+function _loginOper(idx){
+	_viewSpinner();
+	_idx = idx;
+	if(!_isInit){
+		init();
+		setTimeout(loginOper, 300);
+	}
+	else loginOper();
+}
+function directLogin(url_, mod){
+	_viewSpinner();
+	_idx = 2;
+	_url = url_;
+	_mod = mod;
+	if(!_isInit){
+		init();
+		setTimeout(loginOper, 300);
+	}
+	else loginOper();
+}
+function _myjasanOper(){
+	_idx = 9;
+	if(!_isInit){
+		init();
+		setTimeout(loginOper, 300);
+	}else{
+		loginOper();
+	}
+}
+//-->
+</script>
+</head><body onunload="this_site_exit()" marginwidth="0" marginheight="0">
+</body></html>
